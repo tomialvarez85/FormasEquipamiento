@@ -107,27 +107,33 @@ user_problem_statement: "Crear página web moderna y responsive para Formas Equi
 backend:
   - task: "Contact Form API - POST /api/contact"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented POST /api/contact endpoint with email validation, MongoDB integration, proper error handling and Spanish messages"
+      - working: true
+        agent: "testing"
+        comment: "✅ PASSED all tests: Valid data submission works correctly, returns success message in Spanish. Email validation properly rejects invalid emails (422 status). Required field validation correctly rejects missing phone/message fields (422 status). Data persists correctly in MongoDB with all fields including auto-generated id, status='new', and created_at timestamp. Fixed minor logger definition order issue."
 
   - task: "Contact Messages Retrieval - GET /api/contact"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented GET /api/contact endpoint to retrieve all contact messages sorted by date"
+      - working: true
+        agent: "testing"
+        comment: "✅ PASSED all tests: Successfully retrieves all contact messages from MongoDB. Messages are correctly sorted by created_at in descending order (newest first). Returns proper JSON array format with all message fields including id, name, email, phone, message, status, and created_at."
 
 frontend:
   - task: "Responsive Landing Page Design"
