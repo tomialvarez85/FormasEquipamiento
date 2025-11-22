@@ -4,8 +4,12 @@ import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { ChefHat, Briefcase, Home as HomeIcon, Store, Mail, Phone, MapPin, ArrowRight, Star, Check } from 'lucide-react';
-import { services, projects, testimonials, processSteps, stats, submitContactForm } from '../mock';
+import { services, projects, testimonials, processSteps, stats } from '../mock';
 import { useToast } from '../hooks/use-toast';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const iconMap = {
   ChefHat: ChefHat,
