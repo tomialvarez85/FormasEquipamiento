@@ -623,54 +623,298 @@
 }
 
 /* Responsive Design */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero-content {
+    gap: 60px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+
+  .contact-wrapper {
+    gap: 48px;
+  }
+}
+
+/* Mobile devices */
 @media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Header adjustments */
+  .nav {
+    padding: 16px 0;
+  }
+
   .nav-links {
     display: none;
   }
 
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .nav .btn-primary {
+    padding: 10px 20px;
+    font-size: 14px;
+    min-height: 40px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 120px 0 60px;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
 
   .hero-title {
-    font-size: 36px;
-  }
-
-  .stats-row {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-
-  .hero-img {
-    height: 400px;
-  }
-
-  .services-grid,
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .section-title {
     font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    margin-bottom: 24px;
   }
 
   .hero-buttons {
     flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
   }
 
   .btn-primary,
   .btn-secondary {
     width: 100%;
+    padding: 14px 24px;
+  }
+
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 28px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+  }
+
+  .hero-image {
+    order: -1;
+    border-radius: 16px;
+  }
+
+  .hero-img {
+    height: 280px;
+  }
+
+  /* Section spacing */
+  .services-section,
+  .projects-section,
+  .process-section,
+  .testimonials-section,
+  .contact-section {
+    padding: 60px 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-description {
+    font-size: 16px;
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-content {
+    padding: 24px !important;
+  }
+
+  .service-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 20px;
+  }
+
+  .service-title {
+    font-size: 20px;
+  }
+
+  .service-description {
+    font-size: 15px;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-image-wrapper {
+    height: 240px;
+  }
+
+  .project-info {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+
+  /* Process */
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .step-number {
+    width: 64px;
+    height: 64px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .step-title {
+    font-size: 20px;
+  }
+
+  .step-description {
+    font-size: 14px;
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .testimonial-content {
+    padding: 24px !important;
+  }
+
+  .testimonial-text {
+    font-size: 15px;
+  }
+
+  /* Contact */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact-description {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .contact-details {
+    gap: 20px;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .contact-form-content {
+    padding: 24px !important;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 60px 16px 32px;
+    margin-top: 60px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .footer-description {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    padding-top: 24px;
+  }
+
+  .footer-copyright {
+    font-size: 13px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .hero-img {
+    height: 240px;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .stat-item {
+    text-align: center;
+  }
+
+  .project-image-wrapper {
+    height: 200px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 15px;
+    padding: 12px 20px;
   }
 }
