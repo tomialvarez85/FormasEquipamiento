@@ -37,16 +37,16 @@ const Home = () => {
     setIsSubmitting(true);
     
     try {
-      const result = await submitContactForm(formData);
+      const response = await axios.post(`${API}/contact`, formData);
       toast({
         title: "¡Mensaje Enviado!",
-        description: result.message,
+        description: response.data.message,
       });
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
       toast({
         title: "Error",
-        description: "Hubo un problema al enviar el mensaje.",
+        description: error.response?.data?.detail || "Hubo un problema al enviar el mensaje.",
         variant: "destructive"
       });
     } finally {
