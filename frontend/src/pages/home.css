@@ -719,14 +719,16 @@
     display: none;
   }
 
-  .logo-text {
-    font-size: 20px;
+  .desktop-cta {
+    display: none;
   }
 
-  .nav .btn-primary {
-    padding: 10px 20px;
-    font-size: 14px;
-    min-height: 40px;
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+
+  .logo-text {
+    font-size: 20px;
   }
 
   /* Hero Section */
