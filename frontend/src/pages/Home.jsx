@@ -65,6 +65,8 @@ const Home = () => {
             <div className="logo">
               <h2 className="logo-text">Formas Equipamiento</h2>
             </div>
+            
+            {/* Desktop Navigation */}
             <div className="nav-links">
               <a href="#inicio" className="nav-link">Inicio</a>
               <a href="#servicios" className="nav-link">Servicios</a>
@@ -72,7 +74,46 @@ const Home = () => {
               <a href="#proceso" className="nav-link">Proceso</a>
               <a href="#contacto" className="nav-link">Contacto</a>
             </div>
-            <Button className="btn-primary">Cotiza Ahora</Button>
+            
+            <div className="nav-actions">
+              <Button className="btn-primary desktop-cta">Cotiza Ahora</Button>
+              
+              {/* Mobile Menu */}
+              <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" className="mobile-menu-btn">
+                    <Menu size={24} />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="mobile-menu">
+                  <div className="mobile-menu-content">
+                    <div className="mobile-logo">
+                      <h2 className="logo-text">Formas Equipamiento</h2>
+                    </div>
+                    <nav className="mobile-nav-links">
+                      <a href="#inicio" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+                        Inicio
+                      </a>
+                      <a href="#servicios" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+                        Servicios
+                      </a>
+                      <a href="#proyectos" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+                        Proyectos
+                      </a>
+                      <a href="#proceso" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+                        Proceso
+                      </a>
+                      <a href="#contacto" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+                        Contacto
+                      </a>
+                    </nav>
+                    <Button className="btn-primary w-full" onClick={() => setMobileMenuOpen(false)}>
+                      Cotiza Ahora
+                    </Button>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
           </nav>
         </div>
       </header>
