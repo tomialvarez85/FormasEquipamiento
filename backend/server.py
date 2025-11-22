@@ -88,6 +88,53 @@ async def get_status_checks():
     
     return status_checks
 
+@api_router.post("/contact", response_model=ContactFormResponse)
+async def submit_contact_form(contact_data: ContactFormRequest):
+    try:
+        # Create contact message object
+        contact_message = ContactMessage(
+            name=contact_data.name,
+            email=contact_data.email,
+            phone=contact_data.phone,
+            message=contact_data.message
+        )
+        
+        # Convert to dict and serialize datetime to ISO string for MongoDB
+        doc = contact_message.model_dump()
+        doc['created_at'] = doc['created_at'].isoformat()
+        
+        # Insert into database
+        result = await db.contact_messages.insert_one(doc)
+        
+        if result.inserted_id:
+            return ContactFormResponse(
+                success=True,
+                message="Gracias por tu mensaje. Te contactaremos pronto.",
+                id=contact_message.id
+            )
+        else:
+            raise HTTPException(status_code=500, detail="Error al guardar el mensaje")
+            
+    except Exception as e:
+        logger.error(f"Error saving contact message: {str(e)}")
+        raise HTTPException(status_code=500, detail="Hubo un problema al enviar el mensaje")
+
+@api_router.get("/contact", response_model=List[ContactMessage])
+async def get_contact_messages():
+    try:
+        # Exclude MongoDB's _id field from the query results
+        messages = await db.contact_messages.find({}, {"_id": 0}).sort("created_at", -1).to_list(100)
+        
+        # Convert ISO string timestamps back to datetime objects
+        for msg in messages:
+            if isinstance(msg['created_at'], str):
+                msg['created_at'] = datetime.fromisoformat(msg['created_at'])
+        
+        return messages
+    except Exception as e:
+        logger.error(f"Error fetching contact messages: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error al obtener los mensajes")
+
 # Include the router in the main app
 app.include_router(api_router)
 
