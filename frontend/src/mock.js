@@ -129,13 +129,3 @@ export const stats = [
   { id: 3, number: "98%", label: "Clientes Satisfechos" },
   { id: 4, number: "50+", label: "Diseños Únicos" }
 ];
-
-// Mock function to simulate form submission
-export const submitContactForm = (formData) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      resolve({ success: true, message: 'Gracias por tu mensaje. Te contactaremos pronto.' });
-    }, 1000);
-  });
-};
