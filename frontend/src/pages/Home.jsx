@@ -390,8 +390,8 @@ const Home = () => {
             </div>
             <div className="footer-links">
               <h4 className="footer-title">Contacto</h4>
-              <p className="footer-link">Buenos Aires, Argentina</p>
-              <p className="footer-link">+54 11 1234-5678</p>
+              <p className="footer-link">Córdoba, Argentina</p>
+              <p className="footer-link">+54 9 354 360-2061</p>
               <p className="footer-link">info@formasequipamiento.com</p>
             </div>
           </div>
