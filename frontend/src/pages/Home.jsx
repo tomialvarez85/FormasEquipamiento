@@ -4,13 +4,14 @@ import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Sheet, SheetContent, SheetTrigger } from '../components/ui/sheet';
-import { ChefHat, Briefcase, Home as HomeIcon, Store, Mail, Phone, MapPin, ArrowRight, Star, Menu, X } from 'lucide-react';
+import { ChefHat, Briefcase, Home as HomeIcon, Store, Mail, Phone, MapPin, ArrowRight, Star, Menu, X, MessageCircle } from 'lucide-react';
 import { services, projects, testimonials, processSteps, stats } from '../mock';
 import { useToast } from '../hooks/use-toast';
 import axios from 'axios';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
+const WHATSAPP_NUMBER = '+5493543602061';
 
 const iconMap = {
   ChefHat: ChefHat,
