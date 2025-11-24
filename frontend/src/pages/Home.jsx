@@ -57,8 +57,22 @@ const Home = () => {
     }
   };
 
+  const handleWhatsAppClick = () => {
+    const message = encodeURIComponent('¡Hola! Me interesa conocer más sobre sus muebles a medida.');
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+  };
+
   return (
     <div className="home-page">
+      {/* WhatsApp Floating Button */}
+      <button 
+        onClick={handleWhatsAppClick}
+        className="whatsapp-float"
+        aria-label="Contactar por WhatsApp"
+      >
+        <MessageCircle size={28} />
+      </button>
+
       {/* Header */}
       <header className="header">
         <div className="container">
