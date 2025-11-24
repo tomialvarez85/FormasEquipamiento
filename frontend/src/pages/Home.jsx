@@ -285,7 +285,7 @@ const Home = () => {
                   <Phone className="contact-icon" />
                   <div>
                     <div className="contact-label">Teléfono</div>
-                    <div className="contact-value">+54 11 1234-5678</div>
+                    <div className="contact-value">+54 9 354 360-2061</div>
                   </div>
                 </div>
                 <div className="contact-item">
@@ -299,7 +299,7 @@ const Home = () => {
                   <MapPin className="contact-icon" />
                   <div>
                     <div className="contact-label">Ubicación</div>
-                    <div className="contact-value">Buenos Aires, Argentina</div>
+                    <div className="contact-value">Córdoba, Argentina</div>
                   </div>
                 </div>
               </div>
