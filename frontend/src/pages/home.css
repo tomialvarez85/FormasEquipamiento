@@ -27,7 +27,7 @@
 /* WhatsApp Floating Button */
 .whatsapp-float {
   position: fixed;
-  bottom: 24px;
+  bottom: 80px;
   right: 24px;
   width: 64px;
   height: 64px;
@@ -40,7 +40,7 @@
   box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
   border: none;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 99999 !important;
   transition: all 0.3s ease;
   animation: pulse 2s infinite;
 }
