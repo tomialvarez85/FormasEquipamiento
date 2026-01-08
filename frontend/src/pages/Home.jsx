@@ -37,16 +37,29 @@ const Home = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await axios.post(`${API}/contact`, formData);
+      // Crear mensaje de WhatsApp con los datos del formulario
+      const whatsappMessage = `¡Hola! Me gustaría solicitar información sobre sus muebles a medida.
+
+*Nombre:* ${formData.name}
+*Email:* ${formData.email}
+*Teléfono:* ${formData.phone}
+*Mensaje:* ${formData.message}`;
+
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      
+      // Abrir WhatsApp con el mensaje
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`, '_blank');
+      
       toast({
-        title: "¡Mensaje Enviado!",
-        description: response.data.message,
+        title: "¡Redirigiendo a WhatsApp!",
+        description: "Te hemos redirigido a WhatsApp con tu mensaje.",
       });
+      
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
       toast({
         title: "Error",
-        description: error.response?.data?.detail || "Hubo un problema al enviar el mensaje.",
+        description: "Hubo un problema al abrir WhatsApp.",
         variant: "destructive"
       });
     } finally {
