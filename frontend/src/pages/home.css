@@ -24,6 +24,24 @@
   position: relative;
 }
 
+.home-page * {
+  color: inherit;
+}
+
+.home-page h1, 
+.home-page h2, 
+.home-page h3, 
+.home-page h4, 
+.home-page h5, 
+.home-page h6,
+.home-page p,
+.home-page span,
+.home-page div,
+.home-page a,
+.home-page label {
+  color: var(--text-primary);
+}
+
 /* WhatsApp Floating Button */
 .whatsapp-float {
   position: fixed;
