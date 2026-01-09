@@ -1,8 +1,11 @@
 node_modules
 .git
-.env.local
-.DS_Store
 *.log
-.emergent
-tests
-.ruff_cache
+.DS_Store
+.env.local
+.env.*.local
+dist
+build
+.cache
+coverage
+.vercel
