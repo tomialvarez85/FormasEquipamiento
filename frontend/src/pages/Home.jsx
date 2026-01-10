@@ -132,7 +132,10 @@ const Home = () => {
                         Contacto
                       </a>
                     </nav>
-                    <Button className="btn-primary w-full" onClick={() => setMobileMenuOpen(false)}>
+                    <Button className="btn-primary w-full" onClick={() => {
+                      window.location.hash = '#contacto';
+                      setMobileMenuOpen(false);
+                    }}>
                       Cotiza Ahora
                     </Button>
                   </div>
