@@ -75,7 +75,7 @@ export const projects = [
 export const testimonials = [
   {
     id: 1,
-    name: "María González",
+    name: "Maria Antonelli",
     role: "Propietaria",
     comment: "El trabajo de Formas Equipamiento superó todas mis expectativas. La cocina quedó perfecta y el equipo fue muy profesional durante todo el proceso.",
     rating: 5
@@ -89,7 +89,7 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: "Ana Martínez",
+    name: "Ana Narandini",
     role: "Diseñadora de Interiores",
     comment: "He trabajado con muchos fabricantes, pero Formas Equipamiento destaca por su atención al detalle y compromiso con la calidad. Totalmente recomendados.",
     rating: 5
