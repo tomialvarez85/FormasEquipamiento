@@ -157,10 +157,10 @@ const Home = () => {
                 Cada proyecto refleja tu estilo y se adapta perfectamente a tus necesidades.
               </p>
               <div className="hero-buttons">
-                <Button className="btn-primary" size="lg">
+                <Button className="btn-primary" size="lg" onClick={() => window.location.hash = '#proyectos'}>
                   Ver Proyectos <ArrowRight className="ml-2" size={20} />
                 </Button>
-                <Button className="btn-secondary" size="lg">Contáctanos</Button>
+                <Button className="btn-secondary" size="lg" onClick={() => window.location.hash = '#contacto'}>Contáctanos</Button>
               </div>
               <div className="stats-row">
                 {stats.map(stat => (
