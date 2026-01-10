@@ -310,7 +310,7 @@ const Home = () => {
                   <Phone className="contact-icon" />
                   <div>
                     <div className="contact-label">Teléfono</div>
-                    <div className="contact-value">+54 9 354 360-2061</div>
+                    <div className="contact-value">+54 9 3543 60-1640</div>
                   </div>
                 </div>
                 <div className="contact-item">
