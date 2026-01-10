@@ -101,7 +101,7 @@ const Home = () => {
             </div>
             
             <div className="nav-actions">
-              <Button className="btn-primary desktop-cta">Cotiza Ahora</Button>
+              <Button className="btn-primary desktop-cta" onClick={() => window.location.hash = '#contacto'}>Cotiza Ahora</Button>
               
               {/* Mobile Menu */}
               <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
