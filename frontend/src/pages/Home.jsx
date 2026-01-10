@@ -8,7 +8,7 @@ import { ChefHat, Briefcase, Home as HomeIcon, Store, Mail, Phone, MapPin, Arrow
 import { services, projects, testimonials, processSteps, stats } from '../mock';
 import { useToast } from '../hooks/use-toast';
 
-const WHATSAPP_NUMBER = '+5493543602061';
+const WHATSAPP_NUMBER = '+5493543601640';
 
 const iconMap = {
   ChefHat: ChefHat,
