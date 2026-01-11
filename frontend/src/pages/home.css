@@ -148,6 +148,106 @@
   }
 }
 
+/* Floating Decorative Elements */
+.floating-elements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.floating-element {
+  position: absolute;
+  background: var(--accent-primary);
+  opacity: 0.02;
+  border-radius: 4px;
+}
+
+.floating-element:nth-child(1) {
+  width: 200px;
+  height: 4px;
+  top: 20%;
+  left: -200px;
+  animation: floatAcross 45s linear infinite;
+  animation-delay: 0s;
+}
+
+.floating-element:nth-child(2) {
+  width: 150px;
+  height: 3px;
+  top: 40%;
+  left: -150px;
+  animation: floatAcross 60s linear infinite;
+  animation-delay: 15s;
+}
+
+.floating-element:nth-child(3) {
+  width: 180px;
+  height: 4px;
+  top: 60%;
+  left: -180px;
+  animation: floatAcross 55s linear infinite;
+  animation-delay: 30s;
+}
+
+.floating-element:nth-child(4) {
+  width: 120px;
+  height: 3px;
+  top: 80%;
+  left: -120px;
+  animation: floatAcross 50s linear infinite;
+  animation-delay: 10s;
+}
+
+.floating-element:nth-child(5) {
+  width: 4px;
+  height: 200px;
+  top: -200px;
+  left: 15%;
+  animation: floatDown 40s linear infinite;
+  animation-delay: 5s;
+}
+
+.floating-element:nth-child(6) {
+  width: 3px;
+  height: 150px;
+  top: -150px;
+  left: 45%;
+  animation: floatDown 50s linear infinite;
+  animation-delay: 20s;
+}
+
+.floating-element:nth-child(7) {
+  width: 4px;
+  height: 180px;
+  top: -180px;
+  left: 75%;
+  animation: floatDown 45s linear infinite;
+  animation-delay: 35s;
+}
+
+@keyframes floatAcross {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(calc(100vw + 200px)) translateY(-50px) rotate(360deg);
+  }
+}
+
+@keyframes floatDown {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(calc(100vh + 200px)) translateX(50px) rotate(360deg);
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
