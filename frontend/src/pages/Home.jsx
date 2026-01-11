@@ -74,6 +74,17 @@ const Home = () => {
 
   return (
     <div className="home-page">
+      {/* Floating Background Elements */}
+      <div className="floating-elements">
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+      </div>
+
       {/* WhatsApp Floating Button */}
       <button 
         onClick={handleWhatsAppClick}
