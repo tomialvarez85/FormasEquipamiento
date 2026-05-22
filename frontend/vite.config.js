@@ -17,7 +17,8 @@ export default defineConfig({
     allowedHosts: [
       'muebles-modernos.preview.emergentagent.com',
       'localhost',
-      '.emergentagent.com'
+      '.emergentagent.com',
+      '.emergentcf.cloud'
     ],
     hmr: {
       port: 3000,
