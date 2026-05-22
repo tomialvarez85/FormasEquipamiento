@@ -33,7 +33,8 @@ export const portfolioCategories = [
   { id: 'cocinas', label: 'Cocinas' },
   { id: 'dormitorios', label: 'Dormitorios' },
   { id: 'living', label: 'Living' },
-  { id: 'oficina', label: 'Oficina' }
+  { id: 'oficina', label: 'Oficina' },
+  { id: 'banos', label: 'Baños' }
 ];
 
 // Items del portafolio - El usuario subirá las imágenes manualmente.
@@ -50,7 +51,10 @@ export const portfolioItems = [
   { id: 9, category: 'living', categoryLabel: 'Living', image: null },
   { id: 10, category: 'oficina', categoryLabel: 'Oficina', image: null },
   { id: 11, category: 'oficina', categoryLabel: 'Oficina', image: null },
-  { id: 12, category: 'oficina', categoryLabel: 'Oficina', image: null }
+  { id: 12, category: 'oficina', categoryLabel: 'Oficina', image: null },
+  { id: 13, category: 'banos', categoryLabel: 'Baños', image: null },
+  { id: 14, category: 'banos', categoryLabel: 'Baños', image: null },
+  { id: 15, category: 'banos', categoryLabel: 'Baños', image: null }
 ];
 
 export const testimonials = [
