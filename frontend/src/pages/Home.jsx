@@ -4,7 +4,7 @@ import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Sheet, SheetContent, SheetTrigger } from '../components/ui/sheet';
-import { ChefHat, Briefcase, Home as HomeIcon, Store, Mail, Phone, MapPin, ArrowRight, Menu, MessageCircle, ImageIcon } from 'lucide-react';
+import { ChefHat, Briefcase, Home as HomeIcon, Store, Mail, Phone, MapPin, ArrowRight, Menu, MessageCircle, ImageIcon, ChevronDown, ChevronUp } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { services, portfolioItems, portfolioCategories, faqs, processSteps, stats } from '../mock';
 import { useToast } from '../hooks/use-toast';
@@ -29,6 +29,7 @@ const Home = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState('todos');
+  const [showPortfolio, setShowPortfolio] = useState(false);
 
   const filteredPortfolio = activeCategory === 'todos'
     ? portfolioItems
@@ -222,9 +223,6 @@ const Home = () => {
                     </div>
                     <h3 className="service-title">{service.title}</h3>
                     <p className="service-description">{service.description}</p>
-                    <Button variant="ghost" className="service-link">
-                      Más Información <ArrowRight size={16} className="ml-2" />
-                    </Button>
                   </CardContent>
                 </Card>
               );
@@ -243,50 +241,70 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Filtros por categoría */}
-          <div className="portfolio-filters" data-testid="portfolio-filters">
-            {portfolioCategories.map(cat => (
-              <button
-                key={cat.id}
-                onClick={() => setActiveCategory(cat.id)}
-                className={`portfolio-filter-btn ${activeCategory === cat.id ? 'active' : ''}`}
-                data-testid={`portfolio-filter-${cat.id}`}
-              >
-                {cat.label}
-              </button>
-            ))}
+          {/* Botón Ver / Ocultar Fotos */}
+          <div className="portfolio-toggle-wrapper">
+            <Button
+              className="btn-primary portfolio-toggle-btn"
+              onClick={() => setShowPortfolio(prev => !prev)}
+              data-testid="portfolio-toggle-btn"
+              size="lg"
+            >
+              {showPortfolio ? (
+                <>Ocultar Fotos <ChevronUp size={20} className="ml-2" /></>
+              ) : (
+                <>Ver Fotos <ChevronDown size={20} className="ml-2" /></>
+              )}
+            </Button>
           </div>
 
-          {/* Grilla de portafolio */}
-          <div className="portfolio-grid" data-testid="portfolio-grid">
-            {filteredPortfolio.map(item => (
-              <div
-                key={item.id}
-                className="portfolio-item"
-                data-testid={`portfolio-item-${item.id}`}
-                data-category={item.category}
-              >
-                <div className="portfolio-image-wrapper">
-                  {item.image ? (
-                    <img src={item.image} alt={item.categoryLabel} className="portfolio-image" />
-                  ) : (
-                    <div className="portfolio-placeholder" aria-label="Imagen próximamente">
-                      <ImageIcon size={48} strokeWidth={1.2} />
-                      <span className="portfolio-placeholder-text">Próximamente</span>
-                    </div>
-                  )}
-                  <div className="portfolio-hover-overlay">
-                    <span className="portfolio-category-label">{item.categoryLabel}</span>
-                  </div>
-                </div>
+          {showPortfolio && (
+            <>
+              {/* Filtros por categoría */}
+              <div className="portfolio-filters" data-testid="portfolio-filters">
+                {portfolioCategories.map(cat => (
+                  <button
+                    key={cat.id}
+                    onClick={() => setActiveCategory(cat.id)}
+                    className={`portfolio-filter-btn ${activeCategory === cat.id ? 'active' : ''}`}
+                    data-testid={`portfolio-filter-${cat.id}`}
+                  >
+                    {cat.label}
+                  </button>
+                ))}
               </div>
-            ))}
-          </div>
 
-          {filteredPortfolio.length === 0 && (
-            <p className="portfolio-empty" data-testid="portfolio-empty">
-              No hay trabajos en esta categoría todavía.
-            </p>
+              {/* Grilla de portafolio */}
+              <div className="portfolio-grid" data-testid="portfolio-grid">
+                {filteredPortfolio.map(item => (
+                  <div
+                    key={item.id}
+                    className="portfolio-item"
+                    data-testid={`portfolio-item-${item.id}`}
+                    data-category={item.category}
+                  >
+                    <div className="portfolio-image-wrapper">
+                      {item.image ? (
+                        <img src={item.image} alt={item.categoryLabel} className="portfolio-image" />
+                      ) : (
+                        <div className="portfolio-placeholder" aria-label="Imagen próximamente">
+                          <ImageIcon size={48} strokeWidth={1.2} />
+                          <span className="portfolio-placeholder-text">Próximamente</span>
+                        </div>
+                      )}
+                      <div className="portfolio-hover-overlay">
+                        <span className="portfolio-category-label">{item.categoryLabel}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {filteredPortfolio.length === 0 && (
+                <p className="portfolio-empty" data-testid="portfolio-empty">
+                  No hay trabajos en esta categoría todavía.
+                </p>
+              )}
+            </>
           )}
         </div>
       </section>

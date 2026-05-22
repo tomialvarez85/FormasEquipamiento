@@ -584,6 +584,17 @@
   z-index: 1;
 }
 
+/* Toggle button (Ver/Ocultar Fotos) */
+.portfolio-toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-toggle-btn {
+  min-width: 220px;
+}
+
 /* Filter buttons */
 .portfolio-filters {
   display: flex;
