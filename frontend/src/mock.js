@@ -40,8 +40,8 @@ export const portfolioCategories = [
 // Items del portafolio - El usuario subirá las imágenes manualmente.
 // Para agregar una imagen real, reemplazar `image: null` por la URL/ruta de la imagen.
 export const portfolioItems = [
-  { id: 1, category: 'cocinas', categoryLabel: 'Cocinas', image: null },
-  { id: 2, category: 'cocinas', categoryLabel: 'Cocinas', image: null },
+  { id: 1, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/1qatiqkq_cocina.jpeg' },
+  { id: 2, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/06eqy80a_cocina2.jpeg' },
   { id: 3, category: 'cocinas', categoryLabel: 'Cocinas', image: null },
   { id: 4, category: 'dormitorios', categoryLabel: 'Dormitorios', image: null },
   { id: 5, category: 'dormitorios', categoryLabel: 'Dormitorios', image: null },
@@ -52,8 +52,8 @@ export const portfolioItems = [
   { id: 10, category: 'oficina', categoryLabel: 'Oficina', image: null },
   { id: 11, category: 'oficina', categoryLabel: 'Oficina', image: null },
   { id: 12, category: 'oficina', categoryLabel: 'Oficina', image: null },
-  { id: 13, category: 'banos', categoryLabel: 'Baños', image: null },
-  { id: 14, category: 'banos', categoryLabel: 'Baños', image: null },
+  { id: 13, category: 'banos', categoryLabel: 'Baños', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/4e4xnfnj_banio2.jpeg' },
+  { id: 14, category: 'banos', categoryLabel: 'Baños', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/18m09coq_banio3.jpeg' },
   { id: 15, category: 'banos', categoryLabel: 'Baños', image: null }
 ];
 
