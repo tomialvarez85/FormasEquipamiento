@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
@@ -30,6 +30,14 @@ const Home = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState('todos');
   const [showPortfolio, setShowPortfolio] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 30);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const filteredPortfolio = activeCategory === 'todos'
     ? portfolioItems
@@ -102,7 +110,7 @@ const Home = () => {
       </button>
 
       {/* Header */}
-      <header className="header">
+      <header className={`header ${scrolled ? 'scrolled' : ''}`} data-testid="site-header">
         <div className="container">
           <nav className="nav">
             <div className="logo">
