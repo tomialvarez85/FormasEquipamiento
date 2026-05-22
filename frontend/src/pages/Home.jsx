@@ -202,8 +202,8 @@ const Home = () => {
             </div>
             <div className="hero-image">
               <img 
-                src="https://images.unsplash.com/photo-1618220179428-22790b461013?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxpbnRlcmlvcnxlbnwwfHx8fDE3NjM4NDc5MDh8MA&ixlib=rb-4.1.0&q=85"
-                alt="Interior moderno"
+                src="https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/1hq01t3g_imgmainformas.jpeg"
+                alt="Cocina con isla y comedor a medida - Formas Equipamiento"
                 className="hero-img"
               />
             </div>
