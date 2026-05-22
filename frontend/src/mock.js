@@ -15,7 +15,7 @@ export const services = [
   },
   {
     id: 3,
-    title: "Closets y Vestidores",
+    title: "Placards y Vestidores",
     description: "Soluciones de almacenamiento personalizadas que maximizan el espacio y se adaptan perfectamente a tu estilo de vida.",
     icon: "Home"
   },

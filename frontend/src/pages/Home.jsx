@@ -459,7 +459,7 @@ const Home = () => {
               <h4 className="footer-title">Servicios</h4>
               <a href="#" className="footer-link">Muebles de Cocina</a>
               <a href="#" className="footer-link">Mobiliario de Oficina</a>
-              <a href="#" className="footer-link">Closets</a>
+              <a href="#" className="footer-link">Placards</a>
               <a href="#" className="footer-link">Muebles Comerciales</a>
             </div>
             <div className="footer-links">
