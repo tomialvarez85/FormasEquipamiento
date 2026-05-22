@@ -4,8 +4,9 @@ import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Sheet, SheetContent, SheetTrigger } from '../components/ui/sheet';
-import { ChefHat, Briefcase, Home as HomeIcon, Store, Mail, Phone, MapPin, ArrowRight, Star, Menu, X, MessageCircle, ImageIcon } from 'lucide-react';
-import { services, portfolioItems, portfolioCategories, testimonials, processSteps, stats } from '../mock';
+import { ChefHat, Briefcase, Home as HomeIcon, Store, Mail, Phone, MapPin, ArrowRight, Menu, MessageCircle, ImageIcon } from 'lucide-react';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
+import { services, portfolioItems, portfolioCategories, faqs, processSteps, stats } from '../mock';
 import { useToast } from '../hooks/use-toast';
 
 const WHATSAPP_NUMBER = '+5493543601640';
@@ -312,35 +313,33 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="testimonials-section">
+      {/* FAQ Section */}
+      <section className="faq-section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <h2 className="section-title">Preguntas Frecuentes</h2>
             <p className="section-description">
-              La satisfacción de nuestros clientes es nuestra mejor carta de presentación
+              Resolvemos las dudas más comunes sobre nuestros muebles a medida
             </p>
           </div>
-          <div className="testimonials-grid">
-            {testimonials.map(testimonial => (
-              <Card key={testimonial.id} className="testimonial-card">
-                <CardContent className="testimonial-content">
-                  <div className="stars">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} size={20} fill="currentColor" />
-                    ))}
-                  </div>
-                  <p className="testimonial-text">"{testimonial.comment}"</p>
-                  <div className="testimonial-author">
-                    <div className="author-avatar">{testimonial.name.charAt(0)}</div>
-                    <div>
-                      <div className="author-name">{testimonial.name}</div>
-                      <div className="author-role">{testimonial.role}</div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="faq-wrapper">
+            <Accordion type="single" collapsible className="faq-accordion" data-testid="faq-accordion">
+              {faqs.map(faq => (
+                <AccordionItem
+                  key={faq.id}
+                  value={`faq-${faq.id}`}
+                  className="faq-item"
+                  data-testid={`faq-item-${faq.id}`}
+                >
+                  <AccordionTrigger className="faq-trigger">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-content">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>

@@ -69,27 +69,36 @@ export const portfolioItems = [
   { id: 15, category: 'banos', categoryLabel: 'Baños', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/owaoximg_banio.jpeg' }
 ];
 
-export const testimonials = [
+export const faqs = [
   {
     id: 1,
-    name: "Maria Antonelli",
-    role: "Propietaria",
-    comment: "El trabajo de Formas Equipamiento superó todas mis expectativas. La cocina quedó perfecta y el equipo fue muy profesional durante todo el proceso.",
-    rating: 5
+    question: "¿Cuánto demora la fabricación de un mueble a medida?",
+    answer: "El plazo varía según la complejidad del proyecto, pero en promedio una cocina o placard a medida demora entre 30 y 45 días desde la aprobación del diseño. Te damos un plazo exacto al cerrar el presupuesto."
   },
   {
     id: 2,
-    name: "Carlos Rodríguez",
-    role: "Gerente de Oficina",
-    comment: "Transformaron completamente nuestra oficina. Los muebles son de excelente calidad y el diseño es exactamente lo que necesitábamos.",
-    rating: 5
+    question: "¿Cómo es el proceso para cotizar mi proyecto?",
+    answer: "Es simple: nos contactás por WhatsApp o el formulario, coordinamos una visita sin cargo para medir y entender lo que necesitás, y te enviamos un diseño 3D junto con el presupuesto detallado."
   },
   {
     id: 3,
-    name: "Ana Narandini",
-    role: "Diseñadora de Interiores",
-    comment: "He trabajado con muchos fabricantes, pero Formas Equipamiento destaca por su atención al detalle y compromiso con la calidad. Totalmente recomendados.",
-    rating: 5
+    question: "¿Qué materiales utilizan en sus muebles?",
+    answer: "Trabajamos con melaminas de primera marca, MDF enchapado, mesadas de cuarzo, granito y porcelanato, herrajes Blum y Häfele, y maderas macizas para terminaciones especiales. Siempre priorizamos calidad y durabilidad."
+  },
+  {
+    id: 4,
+    question: "¿Realizan envíos e instalación fuera de Córdoba?",
+    answer: "Sí, instalamos en toda la provincia de Córdoba y zonas cercanas. Para destinos más alejados podemos coordinar el envío; consultanos por tu localidad."
+  },
+  {
+    id: 5,
+    question: "¿Qué formas de pago aceptan?",
+    answer: "Aceptamos efectivo, transferencia bancaria y tarjetas. El esquema habitual es una seña al confirmar el diseño y el saldo contra entrega/instalación. También podemos coordinar pagos en cuotas según el proyecto."
+  },
+  {
+    id: 6,
+    question: "¿Ofrecen garantía sobre los muebles?",
+    answer: "Sí, todos nuestros trabajos cuentan con garantía sobre fabricación e instalación. Además respaldamos los herrajes con la garantía del fabricante. Cualquier inconveniente lo resolvemos sin cargo dentro del período cubierto."
   }
 ];
 
