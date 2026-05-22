@@ -4,8 +4,8 @@ import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Sheet, SheetContent, SheetTrigger } from '../components/ui/sheet';
-import { ChefHat, Briefcase, Home as HomeIcon, Store, Mail, Phone, MapPin, ArrowRight, Star, Menu, X, MessageCircle } from 'lucide-react';
-import { services, projects, testimonials, processSteps, stats } from '../mock';
+import { ChefHat, Briefcase, Home as HomeIcon, Store, Mail, Phone, MapPin, ArrowRight, Star, Menu, X, MessageCircle, ImageIcon } from 'lucide-react';
+import { services, portfolioItems, portfolioCategories, testimonials, processSteps, stats } from '../mock';
 import { useToast } from '../hooks/use-toast';
 
 const WHATSAPP_NUMBER = '+5493543601640';
@@ -27,6 +27,11 @@ const Home = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeCategory, setActiveCategory] = useState('todos');
+
+  const filteredPortfolio = activeCategory === 'todos'
+    ? portfolioItems
+    : portfolioItems.filter(item => item.category === activeCategory);
 
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -227,31 +232,61 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Projects Gallery */}
-      <section id="proyectos" className="projects-section">
+      {/* Portfolio Gallery */}
+      <section id="proyectos" className="portfolio-section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Nuestros Proyectos</h2>
+            <h2 className="section-title">Nuestros Trabajos</h2>
             <p className="section-description">
-              Explora algunos de nuestros trabajos más destacados
+              Explorá nuestro portafolio de muebles a medida diseñados y fabricados con dedicación
             </p>
           </div>
-          <div className="projects-grid">
-            {projects.map(project => (
-              <div key={project.id} className="project-card">
-                <div className="project-image-wrapper">
-                  <img src={project.image} alt={project.title} className="project-image" />
-                  <div className="project-overlay">
-                    <span className="project-category">{project.category}</span>
+
+          {/* Filtros por categoría */}
+          <div className="portfolio-filters" data-testid="portfolio-filters">
+            {portfolioCategories.map(cat => (
+              <button
+                key={cat.id}
+                onClick={() => setActiveCategory(cat.id)}
+                className={`portfolio-filter-btn ${activeCategory === cat.id ? 'active' : ''}`}
+                data-testid={`portfolio-filter-${cat.id}`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Grilla de portafolio */}
+          <div className="portfolio-grid" data-testid="portfolio-grid">
+            {filteredPortfolio.map(item => (
+              <div
+                key={item.id}
+                className="portfolio-item"
+                data-testid={`portfolio-item-${item.id}`}
+                data-category={item.category}
+              >
+                <div className="portfolio-image-wrapper">
+                  {item.image ? (
+                    <img src={item.image} alt={item.categoryLabel} className="portfolio-image" />
+                  ) : (
+                    <div className="portfolio-placeholder" aria-label="Imagen próximamente">
+                      <ImageIcon size={48} strokeWidth={1.2} />
+                      <span className="portfolio-placeholder-text">Próximamente</span>
+                    </div>
+                  )}
+                  <div className="portfolio-hover-overlay">
+                    <span className="portfolio-category-label">{item.categoryLabel}</span>
                   </div>
-                </div>
-                <div className="project-info">
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
                 </div>
               </div>
             ))}
           </div>
+
+          {filteredPortfolio.length === 0 && (
+            <p className="portfolio-empty" data-testid="portfolio-empty">
+              No hay trabajos en esta categoría todavía.
+            </p>
+          )}
         </div>
       </section>
 

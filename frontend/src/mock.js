@@ -27,49 +27,30 @@ export const services = [
   }
 ];
 
-export const projects = [
-  {
-    id: 1,
-    title: "Cocina Moderna Minimalista",
-    category: "Cocina",
-    image: "https://images.unsplash.com/photo-1715582888585-f357318c0a1e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxjdXN0b20lMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzYzODQ3ODk4fDA&ixlib=rb-4.1.0&q=85",
-    description: "Diseño contemporáneo con acabados de alta calidad"
-  },
-  {
-    id: 2,
-    title: "Sala de Estar Elegante",
-    category: "Sala",
-    image: "https://images.unsplash.com/photo-1609280069591-0c767e25e7a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxjdXN0b20lMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzYzODQ3ODk4fDA&ixlib=rb-4.1.0&q=85",
-    description: "Espacios acogedores con diseño personalizado"
-  },
-  {
-    id: 3,
-    title: "Cocina Integral Premium",
-    category: "Cocina",
-    image: "https://images.unsplash.com/photo-1715582888577-403297f39fef?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxjdXN0b20lMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzYzODQ3ODk4fDA&ixlib=rb-4.1.0&q=85",
-    description: "Funcionalidad y estilo en perfecta armonía"
-  },
-  {
-    id: 4,
-    title: "Closet Personalizado",
-    category: "Closet",
-    image: "https://images.unsplash.com/photo-1593069431672-f903a33c286f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxjdXN0b20lMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzYzODQ3ODk4fDA&ixlib=rb-4.1.0&q=85",
-    description: "Organización inteligente y diseño sofisticado"
-  },
-  {
-    id: 5,
-    title: "Diseño de Interiores Moderno",
-    category: "Interior",
-    image: "https://images.unsplash.com/photo-1609280069678-ab9ef26a0b05?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3b29kd29ya3xlbnwwfHx8fDE3NjM4NDc5MDN8MA&ixlib=rb-4.1.0&q=85",
-    description: "Ambientes contemporáneos con carpintería de precisión"
-  },
-  {
-    id: 6,
-    title: "Detalles Arquitectónicos",
-    category: "Carpintería",
-    image: "https://images.unsplash.com/photo-1760237655540-8197ef24838b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjB3b29kd29ya3xlbnwwfHx8fDE3NjM4NDc5MDN8MA&ixlib=rb-4.1.0&q=85",
-    description: "Carpintería artesanal con diseño geométrico"
-  }
+// Categorías del portafolio
+export const portfolioCategories = [
+  { id: 'todos', label: 'Todos' },
+  { id: 'cocinas', label: 'Cocinas' },
+  { id: 'dormitorios', label: 'Dormitorios' },
+  { id: 'living', label: 'Living' },
+  { id: 'oficina', label: 'Oficina' }
+];
+
+// Items del portafolio - El usuario subirá las imágenes manualmente.
+// Para agregar una imagen real, reemplazar `image: null` por la URL/ruta de la imagen.
+export const portfolioItems = [
+  { id: 1, category: 'cocinas', categoryLabel: 'Cocinas', image: null },
+  { id: 2, category: 'cocinas', categoryLabel: 'Cocinas', image: null },
+  { id: 3, category: 'cocinas', categoryLabel: 'Cocinas', image: null },
+  { id: 4, category: 'dormitorios', categoryLabel: 'Dormitorios', image: null },
+  { id: 5, category: 'dormitorios', categoryLabel: 'Dormitorios', image: null },
+  { id: 6, category: 'dormitorios', categoryLabel: 'Dormitorios', image: null },
+  { id: 7, category: 'living', categoryLabel: 'Living', image: null },
+  { id: 8, category: 'living', categoryLabel: 'Living', image: null },
+  { id: 9, category: 'living', categoryLabel: 'Living', image: null },
+  { id: 10, category: 'oficina', categoryLabel: 'Oficina', image: null },
+  { id: 11, category: 'oficina', categoryLabel: 'Oficina', image: null },
+  { id: 12, category: 'oficina', categoryLabel: 'Oficina', image: null }
 ];
 
 export const testimonials = [
