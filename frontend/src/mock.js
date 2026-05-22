@@ -42,7 +42,10 @@ export const portfolioCategories = [
 export const portfolioItems = [
   { id: 1, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/1qatiqkq_cocina.jpeg' },
   { id: 2, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/06eqy80a_cocina2.jpeg' },
-  { id: 3, category: 'cocinas', categoryLabel: 'Cocinas', image: null },
+  { id: 3, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/5415qike_cocina3.jpeg' },
+  { id: 16, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/wffkny0z_cocina4.jpeg' },
+  { id: 17, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/cg3uelzm_cocina5.jpeg' },
+  { id: 18, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/3a67v86u_cocina6.jpeg' },
   { id: 4, category: 'dormitorios', categoryLabel: 'Dormitorios', image: null },
   { id: 5, category: 'dormitorios', categoryLabel: 'Dormitorios', image: null },
   { id: 6, category: 'dormitorios', categoryLabel: 'Dormitorios', image: null },
