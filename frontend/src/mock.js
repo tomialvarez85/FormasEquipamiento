@@ -131,7 +131,7 @@ export const processSteps = [
 
 export const stats = [
   { id: 1, number: "500+", label: "Proyectos Completados" },
-  { id: 2, number: "25+", label: "Años de Experiencia" },
-  { id: 3, number: "98%", label: "Clientes Satisfechos" },
+  { id: 2, number: "30+", label: "Años de Experiencia" },
+  { id: 3, number: "98%", label: "Espacios Transformados con Éxito" },
   { id: 4, number: "50+", label: "Diseños Únicos" }
 ];
