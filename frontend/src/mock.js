@@ -15,7 +15,7 @@ export const services = [
   },
   {
     id: 3,
-    title: "Placards y Vestidores",
+    title: "Placares y Vestidores",
     description: "Soluciones de almacenamiento personalizadas que maximizan el espacio y se adaptan perfectamente a tu estilo de vida.",
     icon: "Home"
   },
@@ -24,6 +24,12 @@ export const services = [
     title: "Muebles Comerciales",
     description: "Equipamiento para restaurantes, hoteles y comercios. Diseño duradero que refleja la identidad de tu negocio.",
     icon: "Store"
+  },
+  {
+    id: 5,
+    title: "Desarrollos Integrales",
+    description: "Proyectos llave en mano: equipamos viviendas, oficinas y locales completos. Coordinamos diseño, fabricación e instalación de principio a fin.",
+    icon: "Layers"
   }
 ];
 

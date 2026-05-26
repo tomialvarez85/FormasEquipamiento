@@ -4,7 +4,7 @@ import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Sheet, SheetContent, SheetTrigger } from '../components/ui/sheet';
-import { ChefHat, Briefcase, Home as HomeIcon, Store, Mail, Phone, MapPin, ArrowRight, Menu, MessageCircle, ImageIcon, ChevronDown, ChevronUp } from 'lucide-react';
+import { ChefHat, Briefcase, Home as HomeIcon, Store, Layers, Mail, Phone, MapPin, ArrowRight, Menu, MessageCircle, ImageIcon, ChevronDown, ChevronUp } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { services, portfolioItems, portfolioCategories, faqs, processSteps, stats } from '../mock';
 import { useToast } from '../hooks/use-toast';
@@ -15,7 +15,8 @@ const iconMap = {
   ChefHat: ChefHat,
   Briefcase: Briefcase,
   Home: HomeIcon,
-  Store: Store
+  Store: Store,
+  Layers: Layers
 };
 
 const Home = () => {
@@ -218,7 +219,7 @@ const Home = () => {
           <div className="section-header">
             <h2 className="section-title">Nuestros Servicios</h2>
             <p className="section-description">
-              Ofrecemos soluciones completas en mobiliario personalizado para todo tipo de espacios
+              Ofrecemos soluciones completas en mobiliario a medida para todo tipo de espacios
             </p>
           </div>
           <div className="services-grid">
@@ -485,7 +486,7 @@ const Home = () => {
               <h4 className="footer-title">Servicios</h4>
               <a href="#" className="footer-link">Muebles de Cocina</a>
               <a href="#" className="footer-link">Mobiliario de Oficina</a>
-              <a href="#" className="footer-link">Placards</a>
+              <a href="#" className="footer-link">Placares</a>
               <a href="#" className="footer-link">Muebles Comerciales</a>
             </div>
             <div className="footer-links">
