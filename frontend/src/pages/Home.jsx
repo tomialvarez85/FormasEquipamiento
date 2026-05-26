@@ -180,6 +180,7 @@ const Home = () => {
               <h1 className="hero-title">
                 Muebles a Medida que
                 <span className="accent-text"> Transforman Espacios</span>
+                <span className="hero-tagline">Damos Formas a tus ideas</span>
               </h1>
               <p className="hero-description">
                 Fabricamos muebles personalizados con diseño único y acabados de la más alta calidad. 
