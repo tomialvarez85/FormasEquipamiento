@@ -393,7 +393,7 @@ const Home = () => {
                   <Mail className="contact-icon" />
                   <div>
                     <div className="contact-label">Email</div>
-                    <div className="contact-value">info@formasequipamiento.com</div>
+                    <div className="contact-value">info@formasequipamiento.com.ar</div>
                   </div>
                 </div>
                 <div className="contact-item">
@@ -493,7 +493,7 @@ const Home = () => {
               <h4 className="footer-title">Contacto</h4>
               <p className="footer-link">Córdoba, Argentina</p>
               <p className="footer-link">+54 9 3543 60-1640</p>
-              <p className="footer-link">info@formasequipamiento.com</p>
+              <p className="footer-link">info@formasequipamiento.com.ar</p>
             </div>
           </div>
           <div className="footer-bottom">
