@@ -28,7 +28,7 @@ export const services = [
   {
     id: 5,
     title: "Desarrollos Integrales",
-    description: "Proyectos llave en mano: equipamos viviendas, oficinas y locales completos. Coordinamos diseño, fabricación e instalación de principio a fin.",
+    description: "Equipamos oficinas corporativas, propiedad horizontal, hoteles, hospitales, escuelas, etc. Coordinamos diseño, fabricación e instalación de principio a fin.",
     icon: "Layers"
   }
 ];
@@ -113,25 +113,25 @@ export const processSteps = [
     id: 1,
     step: "01",
     title: "Consulta Inicial",
-    description: "Nos reunimos para entender tus necesidades, estilo y presupuesto. Analizamos el espacio y discutimos ideas."
+    description: "Nos reunimos para entender tus necesidades, estilo y presupuesto. Analizamos el espacio y planteamos alternativas."
   },
   {
     id: 2,
     step: "02",
     title: "Diseño Personalizado",
-    description: "Creamos un diseño 3D detallado de tu proyecto. Seleccionamos materiales y acabados según tus preferencias."
+    description: "Creamos un diseño detallado de tu proyecto. Seleccionamos materiales y acabados según tus preferencias."
   },
   {
     id: 3,
     step: "03",
     title: "Fabricación",
-    description: "Nuestro equipo de expertos fabrica cada pieza con precisión, utilizando materiales de la más alta calidad."
+    description: "Nuestro equipo experimentado fabrica cada pieza con precisión, utilizando materiales de la más alta calidad."
   },
   {
     id: 4,
     step: "04",
     title: "Instalación",
-    description: "Instalamos tu mobiliario con cuidado y profesionalismo, asegurando un acabado perfecto en cada detalle."
+    description: "Instalamos tu mobiliario con cuidado y profesionalismo, asegurando una terminación perfecta en cada detalle."
   }
 ];
 
