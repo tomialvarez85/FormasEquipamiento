@@ -4,7 +4,7 @@ import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Sheet, SheetContent, SheetTrigger } from '../components/ui/sheet';
-import { ChefHat, Briefcase, Home as HomeIcon, Store, Layers, Mail, Phone, MapPin, ArrowRight, Menu, MessageCircle, ImageIcon, ChevronDown, ChevronUp } from 'lucide-react';
+import { ChefHat, Briefcase, Home as HomeIcon, Store, Layers, Stethoscope, Mail, Phone, MapPin, ArrowRight, Menu, MessageCircle, ImageIcon, ChevronDown, ChevronUp } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { BrandWatermark } from '../components/BrandWatermark';
 import { services, portfolioItems, portfolioCategories, faqs, processSteps, stats } from '../mock';
@@ -17,7 +17,8 @@ const iconMap = {
   Briefcase: Briefcase,
   Home: HomeIcon,
   Store: Store,
-  Layers: Layers
+  Layers: Layers,
+  Stethoscope: Stethoscope
 };
 
 const Home = () => {

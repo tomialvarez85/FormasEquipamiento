@@ -30,6 +30,12 @@ export const services = [
     title: "Desarrollos Integrales",
     description: "Equipamos oficinas corporativas, propiedad horizontal, hoteles, hospitales, escuelas, etc. Coordinamos diseño, fabricación e instalación de principio a fin.",
     icon: "Layers"
+  },
+  {
+    id: 6,
+    title: "Mobiliario para el Sector Salud",
+    description: "Diseñamos y fabricamos mobiliario para clínicas, consultorios, laboratorios y centros médicos. Materiales resistentes, higiénicos y funcionales que cumplen con las exigencias del rubro.",
+    icon: "Stethoscope"
   }
 ];
 
