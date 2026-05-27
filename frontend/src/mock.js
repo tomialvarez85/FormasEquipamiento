@@ -77,11 +77,6 @@ export const portfolioItems = [
 
 export const faqs = [
   {
-    id: 1,
-    question: "¿Cuánto demora la fabricación de un mueble a medida?",
-    answer: "El plazo varía según la complejidad del proyecto, pero en promedio una cocina o placard a medida demora entre 30 y 45 días desde la aprobación del diseño. Te damos un plazo exacto al cerrar el presupuesto."
-  },
-  {
     id: 2,
     question: "¿Cómo es el proceso para cotizar mi proyecto?",
     answer: "Es simple: nos contactás por WhatsApp o el formulario, coordinamos una visita sin cargo para medir y entender lo que necesitás, y te enviamos un diseño 3D junto con el presupuesto detallado."
@@ -100,11 +95,6 @@ export const faqs = [
     id: 5,
     question: "¿Qué formas de pago aceptan?",
     answer: "Aceptamos efectivo, transferencia bancaria y tarjetas. El esquema habitual es una seña al confirmar el diseño y el saldo contra entrega/instalación. También podemos coordinar pagos en cuotas según el proyecto."
-  },
-  {
-    id: 6,
-    question: "¿Ofrecen garantía sobre los muebles?",
-    answer: "Sí, todos nuestros trabajos cuentan con garantía sobre fabricación e instalación. Además respaldamos los herrajes con la garantía del fabricante. Cualquier inconveniente lo resolvemos sin cargo dentro del período cubierto."
   }
 ];
 
@@ -113,7 +103,7 @@ export const processSteps = [
     id: 1,
     step: "01",
     title: "Consulta Inicial",
-    description: "Nos reunimos para entender tus necesidades, estilo y presupuesto. Analizamos el espacio y planteamos alternativas."
+    description: "Nos reunimos para entender tus necesidades, estilo y elaborar un presupuesto. Analizamos el espacio y planteamos alternativas."
   },
   {
     id: 2,
