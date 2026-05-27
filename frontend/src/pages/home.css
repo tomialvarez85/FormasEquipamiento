@@ -722,7 +722,7 @@
 }
 
 /* Projects Section */
-/* Brand Watermark (logo SVG en esquina inferior derecha de imágenes) */
+/* Brand Watermark (logo oficial en esquina inferior derecha de imágenes) */
 .brand-watermark {
   position: absolute;
   right: 14px;
@@ -731,7 +731,9 @@
   height: 78px;
   z-index: 3;
   pointer-events: none;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.45));
 }
 
 /* Tamaño compacto en grilla de portafolio */
