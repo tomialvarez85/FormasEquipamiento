@@ -6,6 +6,7 @@ import { Textarea } from '../components/ui/textarea';
 import { Sheet, SheetContent, SheetTrigger } from '../components/ui/sheet';
 import { ChefHat, Briefcase, Home as HomeIcon, Store, Layers, Mail, Phone, MapPin, ArrowRight, Menu, MessageCircle, ImageIcon, ChevronDown, ChevronUp } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
+import { BrandWatermark } from '../components/BrandWatermark';
 import { services, portfolioItems, portfolioCategories, faqs, processSteps, stats } from '../mock';
 import { useToast } from '../hooks/use-toast';
 
@@ -208,6 +209,7 @@ const Home = () => {
                 alt="Cocina con isla y comedor a medida - Formas Equipamiento"
                 className="hero-img"
               />
+              <BrandWatermark />
             </div>
           </div>
         </div>
@@ -294,7 +296,10 @@ const Home = () => {
                   >
                     <div className="portfolio-image-wrapper">
                       {item.image ? (
-                        <img src={item.image} alt={item.categoryLabel} className="portfolio-image" />
+                        <>
+                          <img src={item.image} alt={item.categoryLabel} className="portfolio-image" />
+                          <BrandWatermark />
+                        </>
                       ) : (
                         <div className="portfolio-placeholder" aria-label="Imagen próximamente">
                           <ImageIcon size={48} strokeWidth={1.2} />

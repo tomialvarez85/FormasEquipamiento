@@ -722,7 +722,56 @@
 }
 
 /* Projects Section */
-/* Portfolio Section */
+/* Brand Watermark (logo SVG en esquina inferior derecha de imágenes) */
+.brand-watermark {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 78px;
+  height: 78px;
+  z-index: 3;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+}
+
+/* Tamaño compacto en grilla de portafolio */
+.portfolio-image-wrapper .brand-watermark {
+  right: 10px;
+  bottom: 10px;
+  width: 56px;
+  height: 56px;
+}
+
+/* Hero image - watermark más grande */
+.hero-image .brand-watermark {
+  right: 22px;
+  bottom: 22px;
+  width: 110px;
+  height: 110px;
+}
+
+@media (max-width: 768px) {
+  .brand-watermark {
+    width: 52px;
+    height: 52px;
+    right: 10px;
+    bottom: 10px;
+  }
+  .hero-image .brand-watermark {
+    width: 70px;
+    height: 70px;
+    right: 14px;
+    bottom: 14px;
+  }
+  .portfolio-image-wrapper .brand-watermark {
+    width: 42px;
+    height: 42px;
+    right: 8px;
+    bottom: 8px;
+  }
+}
+
+
 .portfolio-section {
   padding: 100px 0;
   background: var(--bg-secondary);
