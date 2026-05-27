@@ -79,12 +79,12 @@ export const faqs = [
   {
     id: 2,
     question: "¿Cómo es el proceso para cotizar mi proyecto?",
-    answer: "Es simple: nos contactás por WhatsApp o el formulario, coordinamos una visita sin cargo para medir y entender lo que necesitás, y te enviamos un diseño 3D junto con el presupuesto detallado."
+    answer: "Es simple: nos contactás por WhatsApp o Email enviándonos los planos de la obra, o presencialmente en nuestro local, donde conjuntamente desarrollamos el diseño que necesitás a partir del cual te brindamos el presupuesto."
   },
   {
     id: 3,
     question: "¿Qué materiales utilizan en sus muebles?",
-    answer: "Trabajamos con melaminas de primera marca, MDF enchapado, mesadas de cuarzo, granito y porcelanato, herrajes Blum y Häfele, y maderas macizas para terminaciones especiales. Siempre priorizamos calidad y durabilidad."
+    answer: "Trabajamos con una amplia selección de materiales — melamina, madera, aluminio, vidrio y acero inoxidable — eligiendo siempre el más adecuado para cada proyecto."
   },
   {
     id: 4,
@@ -94,7 +94,7 @@ export const faqs = [
   {
     id: 5,
     question: "¿Qué formas de pago aceptan?",
-    answer: "Aceptamos efectivo, transferencia bancaria y tarjetas. El esquema habitual es una seña al confirmar el diseño y el saldo contra entrega/instalación. También podemos coordinar pagos en cuotas según el proyecto."
+    answer: "Aceptamos efectivo, transferencia bancaria y tarjetas. El esquema habitual es una seña al confirmar el diseño y el saldo contra entrega/instalación."
   }
 ];
 
