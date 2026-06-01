@@ -61,7 +61,6 @@ export const portfolioItems = [
   { id: 19, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/b41e0fj9_cocina7.jpeg' },
   { id: 20, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/5v830ciu_cocina8.jpeg' },
   { id: 21, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/2f2xoizf_cocina9.jpeg' },
-  { id: 22, category: 'cocinas', categoryLabel: 'Cocinas', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/cb3wf2ab_cocina10.jpeg' },
   { id: 4, category: 'dormitorios', categoryLabel: 'Dormitorios', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/e39t5xst_dormitorio10.jpeg' },
   { id: 5, category: 'dormitorios', categoryLabel: 'Dormitorios', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/yo3m33xh_dormitorio11.jpeg' },
   { id: 6, category: 'dormitorios', categoryLabel: 'Dormitorios', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/xkbpmhut_dormitorio.jpeg' },
@@ -76,6 +75,7 @@ export const portfolioItems = [
   { id: 25, category: 'living', categoryLabel: 'Living', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/9y25ww3r_living3.jpeg' },
   { id: 10, category: 'oficina', categoryLabel: 'Oficina', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/1xw8bfjx_oficina.jpeg' },
   { id: 11, category: 'oficina', categoryLabel: 'Oficina', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/l9fc1zo4_oficina2.jpeg' },
+  { id: 29, category: 'oficina', categoryLabel: 'Oficina', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/6l2i7w0u_oficina3.jpeg' },
   { id: 13, category: 'banos', categoryLabel: 'Baños', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/4e4xnfnj_banio2.jpeg' },
   { id: 14, category: 'banos', categoryLabel: 'Baños', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/18m09coq_banio3.jpeg' },
   { id: 15, category: 'banos', categoryLabel: 'Baños', image: 'https://customer-assets.emergentagent.com/job_8178eced-ddc8-4299-916b-a893428bbad7/artifacts/owaoximg_banio.jpeg' }
