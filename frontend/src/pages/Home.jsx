@@ -186,8 +186,7 @@ const Home = () => {
                 <span className="hero-tagline">Damos Formas a tus ideas</span>
               </h1>
               <p className="hero-description">
-                Fabricamos muebles personalizados con diseño único y acabados de la más alta calidad. 
-                Cada proyecto refleja tu estilo y se adapta perfectamente a tus necesidades.
+                Diseñamos, fabricamos e instalamos muebles residenciales y corporativos con más de 30 años de experiencia transformando tus planos en espacios funcionales listos para trabajar o habitar.
               </p>
               <div className="hero-buttons">
                 <Button className="btn-primary" size="lg" onClick={() => window.location.hash = '#proyectos'}>
